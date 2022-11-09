@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - viresclient = viresclient.commands.viresclient:start
 
@@ -23,7 +23,7 @@ requirements:
     - flit
   run:
     - python >=3.6
-    - cdflib >=0.4.8
+    - cdflib >=0.3.20
     - jinja2 >=2.10
     - netcdf4 >=1.5.3
     - pandas >=0.18
