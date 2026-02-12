@@ -1,5 +1,5 @@
 {% set name = "viresclient" %}
-{% set version = "0.14.1" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/viresclient-{{ version }}.tar.gz
-  sha256: fa67a66446556b2cec7c6df19a4ad0905ebb269136f0537f8293a3932b641d32
+  sha256: 2f70b5f4fae237b49aa337daa7a6e91c45185a81874d9386f6919f0dcab01ada
 
 build:
   noarch: python
@@ -29,7 +29,6 @@ requirements:
     - netcdf4 >=1.5.3
     - pandas >=0.18
     - requests >=2.0.0
-    - pytables >=3.4.4
     - tqdm >=4.23.0
     - xarray >=0.11.0
 
