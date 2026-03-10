@@ -1,5 +1,5 @@
 {% set name = "viresclient" %}
-{% set version = "0.15.0" %}
+{% set version = "0.15.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/viresclient-{{ version }}.tar.gz
-  sha256: 2f70b5f4fae237b49aa337daa7a6e91c45185a81874d9386f6919f0dcab01ada
+  sha256: d502b81f1a2f6318a71b8c2a797182a146931d71dca6278ca6bd237b83a5be2a
 
 build:
   noarch: python
